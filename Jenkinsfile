@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('git - pobieram kod') {
             steps {
-                git  branch: 'main', url: 'https://github.com/michalrasinskigithub/Frontend.git'
+                checkout scm
             }
         }
 
